@@ -1,0 +1,367 @@
+/* основний колір тексту #212121;
+   другорядний колір тексту #757575; 
+   основний колір та лого #2196F3;
+   колір лого #000000;
+   білий колір  #FFFFFF;
+   колір в хедер для контактів з прозорістю: rgba(255, 255, 255, 0.6);
+   background-color footer:#2F303A;
+*/
+
+:root {
+    --main-color-text:#212121;
+    --text-color:#757575;
+    --accent-color: #2196F3;
+    --white-color:#FFFFFF;
+    --text-logo:#000000;
+    --bcg-footer:#2F303A;
+    --color-transparency:rgba(255, 255, 255, 0.6);
+    --color-section: #F5F4FA;
+    --color-header-bottom: #ECECEC;
+    --color-border-portfolio: #EEEEEE;
+   --color-activ-btn: #188CE8;
+    }
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color:var(--main-color-text);
+    background-color: var(--white-color);
+}
+
+ul,
+h1,
+h2,
+h3,
+p{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section:nth-child(2n+4) {
+    background-color: var(--color-section);
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color:aqua; */
+}
+
+/* header */
+
+/* Logo */
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    color: var(--text-logo);
+}
+
+.header-logo{
+    margin-right: 93px;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus{
+    text-decoration: underline var(--accent-color);
+}
+
+/* Page navigation */
+
+.current{
+    color: var(--accent-color);
+}
+
+.page-nav,
+.header-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-nav-link {
+    display: flex;
+    color:inherit;
+    text-decoration: none;
+}
+
+.page-nav-link:hover,
+.page-nav-link:focus{
+    color: var(--accent-color);
+}
+
+
+.contact,
+.page-nav-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.contact + .contact,
+.page-nav-item + .page-nav-item{
+    margin-left: 50px;
+}
+
+.contact{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.contact:hover,
+.contact:focus{
+    color: var(--accent-color);
+}
+.header{
+    border-bottom: 1px solid var(--color-header-bottom);
+}
+/* Main page Studio */
+
+/* Hero */
+.hero{
+    padding: 200px 0px;
+    background-color:var(--bcg-footer)
+}
+
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 1.366; 
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color:var(--bcg-footer);
+}
+
+/* Button */
+
+.btn {
+    min-width: 216px;
+    padding: 10px 32px;
+    border:none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-activ-btn);
+}
+ /* Preference */
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ /* .hide{
+    display: none;
+} */
+.preference{
+    display: flex;
+    text-align: left;
+}
+.preference-item{
+    width: 270px;
+}
+.preference-item +.preference-item{
+    margin-left: 30px;
+}
+.preference-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+}
+
+.preference-text{
+    line-height: 1.71;
+    color: var(--text-color);
+}
+
+/* Gallery */
+.gallery-section{
+    padding-top: 0;
+}
+
+.title-section{ 
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+   /* Our team */
+.team-item {
+    border: var(--color-section);
+    border-radius: 4px;
+    background-color:var(--white-color);
+}
+.team-list{
+display: flex;
+justify-content: space-between;
+}
+.team-title,
+.team-text{
+    font-size: 16px;
+    line-height: 1.19;
+}
+.team-body{
+padding: 30px 0;
+}
+
+.team-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.team-text{
+    color:var(--text-color);
+}
+
+/* Main page Portfolio */
+.filter{
+    margin-bottom: 50px;
+}
+.filter-item{
+    display: inline-block;
+}
+
+.filter-btn {
+    min-width: 73px;
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+}
+.filter-item + .filter-item {
+margin-left: 8px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.portfolio-item{
+    justify-content: flex-start;
+    width: 370px;
+    margin: 15px;
+}
+.portfolio-img,
+.team-img {
+    display: block;
+}
+.portfolio-link{
+    text-decoration: none;
+}
+.portfolio-field-text {
+    display: block;
+    padding: 20px 24px;
+    text-align: left;
+    border: 1px solid var(--color-border-portfolio);
+}
+
+.portfolio-title{
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color-text);
+}
+
+.portfolio-text{
+    font-size: 16px;
+    line-height: 1.88;
+    color:var(--text-color);
+}
+/* Footer */
+
+.footer{
+    background-color: var(--bcg-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address-list{
+    display:block;
+}
+
+.address {
+    font-style: normal;
+    line-height:1.71;
+    text-decoration: none;
+}
+.logo-footer{
+    display: block;
+    margin-bottom: 20px;
+}
+.address-item + .address-item{
+    margin-top: 9px;
+}
+.logo-footer,
+.map-link {
+    color:var(--white-color);
+}
+
+.link-mail,
+.link-phone{
+    color:var(--color-transparency);
+}
+
+.address:hover,
+.address:focus{
+    color: var(--accent-color);
+}
