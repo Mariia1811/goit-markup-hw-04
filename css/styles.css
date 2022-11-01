@@ -19,6 +19,7 @@
     --color-header-bottom: #ECECEC;
     --color-border-portfolio: #EEEEEE;
    --color-activ-btn: #188CE8;
+   --color-gradient:rgba(47, 48, 58, 0.4);
     }
 
 body {
@@ -137,9 +138,19 @@ p{
 /* Main page Studio */
 
 /* Hero */
+
 .hero{
-    padding: 200px 0px;
-    background-color:var(--bcg-footer)
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+padding: 200px 0px;
+background-image: linear-gradient(to right, var(--color-gradient), var(--color-gradient)),
+url("../images/bgimage.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+text-align: center;
 }
 
 .hero-title{
@@ -153,7 +164,6 @@ p{
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
-    background-color:var(--bcg-footer);
 }
 
 /* Button */
