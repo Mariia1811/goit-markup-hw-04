@@ -12,21 +12,38 @@
 
 <body>
      <!--Шапка сайту-->
-     <header class="header">
+    <!--Шапка сайту-->
+    <header class="header">
         <div class="container header-field">
-            <nav class="header-field"> 
-              <div class="header-logo"> <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-              </div>
+            <nav class="header-field">
+                <div class="header-logo"> <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                </div>
                 <ul class="page-nav list">
                     <li class="page-nav-item"> <a href="./index.html" class="page-nav-link current">Студія</a></li>
                     <li class="page-nav-item"> <a href="./portfolio.html" class="page-nav-link">Портфоліо</a></li>
-                    <li class="page-nav-item"> <a href="#" class="page-nav-link" >Контакти</a></li>
+                    <li class="page-nav-item"> <a href="" class="page-nav-link">Контакти</a></li>
                 </ul>
             </nav>
-
-            <div>
-                <a href="mailto:info@devstudio.com" class="contact" >info@devstudio.com</a>
-                <a href="tel:+380961111111" class="contact" >+38 096 111 11 11</a>
+    
+            <div class="header-contacts">
+                <ul class="header-contacts-list">
+                    <li class="header-contact-item">
+                        <a href="mailto:info@devstudio.com" class="contact">
+                            <svg class="header-icon-mail">
+                                <use href="./images/icons.svg#icon-envelope" width="16" height="12"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="header-contact-item">
+                        <a href="tel:+380961111111" class="contact">
+                            <svg class="header-icon-tel">
+                                <use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -132,17 +149,62 @@
         </section>
     </main>
 
-     <!--Підвал сайту-->
-     <footer class="footer">
-        <div class="container ">
-            <a class="logo logo-footer" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-            <address>
-                <ul class="address-list list">
-                 <li class="address-item"> <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17" class="address map-link" target="_blank"  rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>  </li>
-                 <li class="address-item"> <a href="mailto:info@devstudio.com" class="address link-mail">info@devstudio.com</a> </li>
-                 <li class="address-item"> <a href="tel:+380961111111" class="address link-phone">+38 096 111 11 11</a> </li> 
-                </ul> 
-             </address>
+    <!--Підвал сайту-->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <a class="logo logo-footer" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                <address>
+                    <ul class="address-list">
+                        <li class="address-item">
+                            <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                                class="address map-link" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі
+                                Українки, 26</a>
+                        </li>
+                        <li class="address-item">
+                            <a href="mailto:info@devstudio.com" class="address link-mail">info@devstudio.com</a>
+                        </li>
+                        <li class="address-item"> <a href="tel:+380961111111" class="address link-phone">+38 096 111 11
+                                11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-socials">
+                <p>
+                    приєднуйтесь
+                </p>
+                <ul class="team-socials">
+                    <li class="social-item">
+                        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
